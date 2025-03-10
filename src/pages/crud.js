@@ -71,6 +71,7 @@ const crud = () => {
       console.log(err);
     }
   };
+  
 
   // Get customer list
   useEffect(
