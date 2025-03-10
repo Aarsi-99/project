@@ -275,6 +275,9 @@ const crud = () => {
           <Button variant="outlined" onClick={() => handleClose()}>
             Cancel
           </Button>
+          <Button variant="outlined" onClick={() => handleClose()}>
+            reject
+          </Button>
         </Box>
       </ModalComp>
     </>
