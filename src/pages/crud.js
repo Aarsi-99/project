@@ -25,7 +25,10 @@ const crud = () => {
   const searchFilterHandler = (value) => {
     setSearchFilter(value);
   };
- 
+  const searchFilterHandlers = (value) => {
+    setSearchFilter(value);
+  };
+
   const [deleteId, setDeleteId] = useState("");
 
   const [open, setOpen] = useState(false);
@@ -251,7 +254,7 @@ const crud = () => {
         </Container>           
       </Box>
 
-      
+
       <ModalComp open={open} handleClose={handleClose}>
         <Typography id="modal-modal-title" variant="h6" component="h2">
           Are you sure you want to delete ?
@@ -274,9 +277,6 @@ const crud = () => {
           </Button>
           <Button variant="outlined" onClick={() => handleClose()}>
             Cancel
-          </Button>
-          <Button variant="outlined" onClick={() => handleClose()}>
-            reject
           </Button>
         </Box>
       </ModalComp>
